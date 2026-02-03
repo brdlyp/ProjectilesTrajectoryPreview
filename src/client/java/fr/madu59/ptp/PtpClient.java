@@ -336,11 +336,11 @@ public class PtpClient implements ClientModInitializer {
     }
 
     public static boolean isEnabled() {
-        return client.hasSingleplayerServer() || serverHasMod;
+        return true; // Always enabled - modified to work on all servers
     }
 
     public static boolean isEnabled(ProjectileInfo projectileInfo) {
-        return client.hasSingleplayerServer() || serverHasMod || projectileInfo.bypassAntiCheat;
+        return true; // Always enabled - modified to work on all servers
     }
 
     private static void registerKeyMappings() {
